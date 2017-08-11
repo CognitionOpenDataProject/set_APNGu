@@ -224,6 +224,9 @@ div.tocify {
 <div id="pilot-alicia-hofelich-mohr" class="section level4">
 <h4>Pilot: Alicia Hofelich Mohr</h4>
 </div>
+<div id="co-pilot-tom-hardwicke" class="section level4">
+<h4>Co-pilot: Tom Hardwicke</h4>
+</div>
 <div id="start-date-08-10-2017" class="section level4">
 <h4>Start date: 08-10-2017</h4>
 </div>
@@ -453,13 +456,13 @@ rtd &lt;- round(cor(exp1overall$Trustworthiness, exp1overall$Dominance), 2)
 </div>
 <div id="step-5-conclusion" class="section level2">
 <h2>Step 5: Conclusion</h2>
-<p>Overall, this dataset seemed sufficiently documented and the parts of Study 1 that were attempted replicated with only minor numeric errors.</p>
-<pre class="r"><code>codReport(Report_Type = 'pilot',
+<pre class="r"><code>codReport(Report_Type = 'joint',
           Article_ID = 'APNGu', 
           Insufficient_Information_Errors = 0,
           Decision_Errors = 0, 
           Major_Numerical_Errors = 0, 
-          Minor_Numerical_Errors = 1)</code></pre>
+          Minor_Numerical_Errors = 1,
+          Author_Assistance = FALSE)</code></pre>
 <table>
 <thead>
 <tr class="header">

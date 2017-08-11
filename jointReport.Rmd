@@ -8,6 +8,7 @@ output:
 
 #### Article ID: APNGu
 #### Pilot: Alicia Hofelich Mohr
+#### Co-pilot: Tom Hardwicke  
 #### Start date: 08-10-2017
 #### End date: 08-11-2017  
 
@@ -83,6 +84,7 @@ Next, run the correlation between trustworthiness and the average warmth rating.
 ```{r}
 cor.test(exp1overall$Trustworthiness, exp1overall$Warmth)
 ```
+
 This matches what was reported. 
 
 Then, run the correlation between dominance and competence. 
@@ -92,6 +94,7 @@ Then, run the correlation between dominance and competence.
 ```{r}
 cor.test(exp1overall$Dominance, exp1overall$Competence)
 ```
+
 This also matches what was reported. 
 
 > The size of the correlation between trustworthiness and warmth was significantly greater than the size of the correlation for dominance and competence: ZPF = 15.46, p < 0.001, n = 1,000 (for further details on the statistical test see Raghunathan, Rosenthal, & Rubin, 1996). It therefore appears that trustworthiness and warmth facial judgments are indeed highly similar. In contrast, dominance and competence facial judgments are less strongly related (see Fig. 2).
@@ -151,16 +154,14 @@ compareValues(reportedValue = 15.46, obtainedValue = 15.67)
 
 ## Step 5: Conclusion
 
-Overall, this dataset seemed sufficiently documented and the parts of Study 1 that were attempted replicated with only minor numeric errors. 
-
 ```{r}
-codReport(Report_Type = 'pilot',
+codReport(Report_Type = 'joint',
           Article_ID = 'APNGu', 
           Insufficient_Information_Errors = 0,
           Decision_Errors = 0, 
           Major_Numerical_Errors = 0, 
-          Minor_Numerical_Errors = 1)
-
+          Minor_Numerical_Errors = 1,
+          Author_Assistance = FALSE)
 ```
 
 Overall, this analysis was straight forward, sufficiently described in the article, and the data was sufficiently documented. The only other reporting information that may have been helpful is how the authors calculated the ZPF scores - whether they used a statistical package, website, or did it by hand. That could help explain the minor numeric inconsistencies. 
